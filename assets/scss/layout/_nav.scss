@@ -1,0 +1,58 @@
+.navBox {
+    background: $color-sec;
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+.logo {
+    width: 80px;
+
+    @include mobile {
+        margin: 15px;
+    }
+}
+
+.navList {
+    display: flex;
+    gap: 64px;
+
+    @include pad {
+        gap: 32px;
+    }
+    
+    @include mobile {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .item {
+        @include mobile {
+            width: 50%;
+            border: 1px solid #fff;
+        }
+    }
+
+    .link {
+        color: $color-whi;
+        font-size: 20px;
+        text-decoration: none;
+
+        @include mobile {
+            padding: 12px 0;
+            text-align: center;
+        }
+    }
+}

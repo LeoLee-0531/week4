@@ -1,0 +1,55 @@
+.container {
+  max-width: 1316px;
+  @include container-def;
+
+  @include pad {
+    max-width: 716px;
+  }
+
+  @include mobile {
+    max-width: 367px;
+  }
+}
+
+.container_nav {
+  max-width: 1316px;
+  @include container-def;
+
+  @include pad {
+    max-width: 716px;
+  }
+
+  @include mobile {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// .container_footer {
+//     max-width: 1316px;
+//     @include container-def;
+
+//     @include pad {
+//         max-width: 716px;
+//     }
+
+//     @include mobile {
+        
+//     }
+// }
+
+.col-3 {
+  max-width: calc(25% - 18px);
+}
+
+.col-md-6 {
+  @include pad-larger {
+    max-width: calc(50% - 12px);
+  }
+}
+
+.col-sm-12 {
+  @include mobile {
+    max-width: 100%;
+  }
+}

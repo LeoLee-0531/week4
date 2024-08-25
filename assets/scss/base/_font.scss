@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Noto Sans TC;
+    src: url(/assets/font/Noto_Sans_TC/NotoSansTC-VariableFont_wght.ttf);
+    unicode-range: U+4E00-9FFF;
+  }
+  
+  @font-face {
+    font-family: Roboto;
+    src: url(/assets/font/Roboto/Roboto-Regular.ttf);
+    unicode-range: U+00-024F;
+  }
+  
+  body {   
+    font-family: Noto Sans TC, Roboto, sans-serif;
+  }

@@ -1,0 +1,183 @@
+.pages {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.pagesList {
+  display: flex;
+
+  .item {
+    width: 33.33%;
+    border: 1px solid #dcdcdc;
+  }
+
+  .link {
+    padding: 24px 0;
+    font-size: $fz-32;
+    color: $color-bla;
+    font-weight: bold;
+
+    @include pad {
+      font-size: $fz-24;
+    }
+
+    @include mobile {
+      font-size: $fz-16;
+    }
+  }
+
+  .current {
+    border-bottom: 8px solid #aa0601;
+  }
+}
+
+.header {
+  display: flex;
+
+  .image1,
+  .image2 {
+    width: 50%;
+  }
+
+  .image1 {
+    @include pad {
+      content: url("/assets/images/product-header-sm-1.png");
+    }
+  }
+
+  .image2 {
+    @include pad {
+      content: url("/assets/images/product-header-sm-2.png");
+    }
+  }
+}
+
+.product {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .title {
+    font-size: $fz-42;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .intro {
+    font-size: $fz-32;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+
+  @include pad-larger {
+    margin-bottom: -40px;
+  }
+
+  @include mobile {
+    margin-bottom: -24px;
+    padding-bottom: 64px;
+  }
+
+  .card {
+    margin-bottom: 80px;
+
+    @include pad-larger {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+
+    .image {
+      max-width: 100%;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .name {
+        font-size: $fz-24;
+      }
+
+      .price {
+        font-size: $fz-24;
+        color: $color-sec;
+        font-weight: bold;
+      }
+    }
+
+    .color {
+      display: flex;
+      gap: 8px;
+
+      .color1,
+      .color2 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+      }
+
+      .color1 {
+        background-color: $color-pro1;
+      }
+
+      .color2 {
+        background-color: $color-pro2;
+      }
+    }
+  }
+}
+
+.pageNav {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    border: 1px solid $color-pageNav;
+  }
+
+  .pre, .next {
+    width: 81px;
+
+    @include mobile {
+        width: 75px;
+    }
+  }
+
+  .next {
+    background-color: $color-pageNav-next;
+  }
+
+  .next_link,
+  .pre_link {
+    color: $color-pageNav;
+    padding: 12px;
+  }
+
+  .num {
+    width: 42px;
+
+    @include mobile {
+        width: 40px;
+    }
+  }
+
+  .num_link {
+    color: $color-pageNav;
+    padding: 12px 16px;
+  }
+
+  .current {
+    background-color: $color-bla;
+    color: $color-whi;
+  }
+}
