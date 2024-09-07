@@ -1,114 +1,120 @@
 .footer {
-    background-color: $color-sec;
-    padding-top: 60px;
+  background-color: $color-sec;
+  padding-top: 60px;
 
-    @include mobile {
-        padding-top: 24px;
-    }
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    * {
-        color: $color-whi;
-    }
+  @include mobile {
+    padding-top: 24px;
+  }
+
+  * {
+    color: $color-whi;
+  }
 }
 
 .footer_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 32px;
 
-    @include mobile {
-        margin-bottom: 24px;
-    }
+  @include mobile {
+    margin-bottom: 24px;
+  }
 }
 
 .footerNav {
-    display: flex;
-    gap: 48px;
-    margin-bottom: 45px;
+  display: flex;
+  gap: 48px;
+  margin-bottom: 45px;
 
-    @include pad {
-        gap: 24px;
-        margin-bottom: 32px;
-    }
-    
-    @include mobile {
-        display: none;
-    }
+  @include pad {
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .link {
+    font-size: 36px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 20px;
 
-    .link {
-        font-size: 36px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        @include pad {
-            font-size: 32px;
-        }
-
-        @include mobile {
-            font-size: 16px;
-            gap: 10px;
-        }
-
-        .material-symbols-outlined {
-            font-size: 36px;
-        }
+    @include pad {
+      font-size: 32px;
     }
+
+    @include mobile {
+      font-size: 16px;
+      gap: 10px;
+    }
+
+    .material-symbols-outlined {
+      font-size: 36px;
+    }
+  }
 }
 
 .socialList {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
+
+  @include pad {
+    gap: 16px;
+  }
+
+  @include mobile {
+    gap: 8px;
+  }
+
+  .image {
+    // width: 48px;
+    max-width: 100%;
 
     @include pad {
-        gap: 16px;
+      width: 32px;
     }
-
-    @include mobile {
-        gap: 8px;
-    }
-
-    .image {
-        width: 48px;
-
-        @include pad {
-            width: 32px;
-        }
-    }
+  }
 }
 
 .footer_hr {
-    margin: 0;
+  margin: 0;
 }
 
 .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+
+  @include mobile {
+    padding: 24px 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .terms {
     display: flex;
-    justify-content: space-between;
-    padding: 32px 0;
+    align-items: center;
+    gap: 48px;
+    font-size: 14px;
 
     @include mobile {
-        padding: 24px 0;
-        flex-direction: column;
-        gap: 8px;
+      flex-direction: column;
+      align-items: start;
+      gap: 8px;
     }
-
-    .terms {
-        display: flex;
-        align-items: center;
-        gap: 48px;
-        font-size: 14px;
-
-        @include mobile {
-            flex-direction: column;
-            align-items: start;
-            gap: 8px;
-        }
-    }
+  }
 }

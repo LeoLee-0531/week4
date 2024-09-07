@@ -1,6 +1,5 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    outline: 1px solid black;
 }
 
 body {
@@ -11,7 +10,12 @@ a {
     display: block;
     text-decoration: none;
     text-align: center;
-} 
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(0.95);
+}
 
 img {
     display: block;
