@@ -54,14 +54,7 @@
   }
 
   .feature {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
     background-color: $color-background;
-
-    @include mobile {
-      padding: 40px 0;
-    }
 
     .featureList {
       @include mobile {
@@ -93,14 +86,6 @@
   }
 
   .classic {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    @include mobile {
-      padding-top: 40px;
-      padding-bottom: 4px;
-    }
-
     &List {
       @include mobile {
         margin-bottom: -24px;
@@ -140,8 +125,6 @@
   }
 
   .collaborate {
-    padding-top: 80px;
-    padding-bottom: 80px;
     background-image: url('/assets/images/index-bg.png');
     background-size: cover;
     background-position: center;
@@ -182,9 +165,6 @@
   }
 
   .recommendation {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
     .recommendationList {
       display: flex;
       justify-content: space-between;
@@ -235,8 +215,6 @@
   }
 
   .contact {
-    padding-top: 80px;
-    padding-bottom: 80px;
     background-color: $color-background;
 
     * {
@@ -263,11 +241,14 @@
     .text {
       font-size: 20px;
       margin-bottom: 24px;
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
 
     .termsCheck {
       display: flex;
-      align-items: center;
       margin-bottom: 48px;
 
       .input_checkbox {

@@ -28,6 +28,14 @@
 .container_contact {
   max-width: 660px;
   @include container-def;
+
+  @include pad {
+    max-width: 576px;
+  }
+
+  @include mobile {
+    max-width: 369px;
+  }
 }
 
 .title_sec {
