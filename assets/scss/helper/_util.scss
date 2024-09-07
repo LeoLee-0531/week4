@@ -51,6 +51,14 @@
   text-align: center;
 }
 
+.link, .button {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +74,13 @@
 .col-4 {
   width: 33.333%;
   @include row-def;
+}
+
+.col-md-lg-6 {
+  @include pad-larger {
+    width: 50%;
+    @include row-def;
+  }
 }
 
 .col-md-6 {
@@ -85,7 +100,6 @@
 .col-sm-12 {
   @include mobile {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    @include row-def;
   }
 }

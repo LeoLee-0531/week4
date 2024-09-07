@@ -1,18 +1,19 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    outline: 1px solid black;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-} 
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
 
 img {
-    display: block;
+  display: block;
 }

@@ -105,6 +105,10 @@
   
         .name {
           font-size: $fz-24;
+
+          // @include pad-larger {
+          //   font-size: $fz-16;
+          // }
         }
   
         .price {

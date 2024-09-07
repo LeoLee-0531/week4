@@ -41,7 +41,7 @@
       }
     }
 
-    .btn {
+    .button {
       width: 104px;
       height: 41px;
       background-color: $color-sec;
@@ -133,6 +133,7 @@
       }
 
       @include mobile {
+        max-width: 100%;
         font-size: 48px;
       }
     }
@@ -253,11 +254,10 @@
       margin-bottom: 16px;
       border: 1px solid $color-bla;
       background-color: $color-background;
+    }
 
-      &::placeholder {
-        opacity: 50%;
-        position: absolute;
-      }
+    .comment {
+      height: 136px;
     }
 
     .text {
@@ -273,7 +273,11 @@
       .input_checkbox {
         width: 16px;
         height: 16px;
-        margin-right: 8px;
+        margin: 0 8px 0 0;
+      }
+
+      label {
+        margin: 0;
       }
     }
 
@@ -282,8 +286,10 @@
       height: 56px;
       background-color: $color-sec;
       color: $color-whi;
+      border: 0;
       font-weight: bold;
       margin: 0 auto;
+      cursor: pointer;
     }
   }
 }
